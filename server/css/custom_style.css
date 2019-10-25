@@ -1,0 +1,597 @@
+body {
+  height: 100vh;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#calendar {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+#timetable-calendar {
+  max-width: 80%;
+  margin: 0 auto; 
+}
+#teacher-schedule-calendar {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto; 
+}
+
+#find-teacher-calendar {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto; 
+}
+
+#favourite-calendar {
+  max-width: 80%;
+  margin: 0 auto; 
+}
+
+.handpoointer {
+  cursor:pointer;
+}
+
+.effectdiv {
+	display: flex;
+	float: left; 
+	height: 100px;
+}
+
+.top_main_img_style {
+  float: right;
+  height: 80pt;
+}
+
+.top_main_des_style {
+  width: 60%;
+}
+.excellentstyle {
+	float:left; 
+	margin-bottom: auto; 
+	width: 20%;
+}
+
+.main_color {
+	background-color: #0F59A5;
+}
+
+.gray_back_color {
+  background-color: : #F8F8F8;
+}
+.item_div_shadow {
+    box-shadow: 1px 1px 1px #888888;
+    background-color: #fff;
+}
+
+.des_height {
+  height: 150pt;
+}
+
+.stutus_bar_style {
+	height: 65pt; 
+	width: 25%; 
+	text-align: center;
+}
+
+.div_horizontal {
+	float:left; 
+	margin-bottom: auto; 
+}
+
+/* hover div item animationstart */
+.style_prevu_kit
+{
+    display:inline-block;
+    border:0;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+
+}
+.style_prevu_kit:hover
+{
+    box-shadow: 1px 1px 1px #888888;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.01);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.01);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.01);
+    transition: all 200ms ease-in;
+    transform: scale(1.01);
+}
+/* hover div item animation end */
+
+/* Overlay when Modal is open */
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+ 
+/* Modal box or Popup box */
+.popupContainer{
+	position:absolute;
+	width:330px;
+	height: auto;
+	left:45%;
+	top:80px;
+	background: #FFF;
+}
+
+#modal_trigger  {
+    margin: 100px auto;
+     width: 100px;
+     display: block;
+}
+ 
+.btn  {
+    padding: 10px 20px;
+     background:  #F4F4F2;
+}
+ 
+.btn_red  {
+    background:  #ED6347;
+     color:  #FFF;
+}
+ 
+.btn:hover  {
+    background:  #E4E4E2;
+}
+ 
+.btn_red:hover  {
+    background:  #C12B05;
+}
+ 
+a.btn  {
+    color: #666;
+     text-align:  center;
+     text-decoration:  none;
+}
+ 
+a.btn_red  {
+    color:  #FFF;
+}
+ 
+.one_half  {
+    width: 50%;
+     display:  block;
+     float: left;
+}
+ 
+.one_half.last  {
+    width: 45%;
+     margin-left: 5%;
+}
+
+/* Popup Styles*/
+.popupHeader  {
+    font-size: 16px;
+     text-transform:  uppercase;
+}
+ 
+.popupHeader  {
+    background: #F4F4F2;
+     position: relative;
+     padding: 10px 20px;
+     border-bottom: 1px solid #DDD;
+     font-weight: bold;
+}
+ 
+.popupHeader .modal_close  {
+    position:  absolute;
+     right:  0;
+     top: 0;
+     padding: 10px 15px;
+     background: #E4E4E2;
+     cursor:  pointer;
+     color: #aaa;
+     font-size: 16px;
+}
+ 
+.popupBody  {
+    padding: 20px;
+}
+
+
+.social_login .social_box  {
+    display: block;
+     clear: both;
+     padding: 10px;
+     margin-bottom:  10px;
+     background:  #F4F4F2;
+     overflow:  hidden;
+}
+ 
+.social_login .icon  {
+    display: block;
+     width: 10px;
+     padding: 5px 10px;
+     margin-right:  10px;
+     float: left;
+     color: #FFF;
+     font-size: 16px;
+     text-align:  center;
+}
+ 
+.social_login .fb .icon  {
+    background: #3B5998;
+}
+ 
+.social_login .google .icon  {
+    background: #DD4B39;
+}
+ 
+.social_login .icon_title  {
+    display: block;
+     padding: 5px 0;
+     float: left;
+     font-weight:  bold;
+     font-size:  16px;
+     color: #777;
+}
+ 
+.social_login .social_box:hover  {
+    background:  #E4E4E2;
+}
+ 
+ 
+.centeredText  {
+    text-align:  center;
+     margin:  20px 0;
+     clear:  both;
+     overflow:  hidden;
+     text-transform:  uppercase;
+}
+ 
+ 
+.action_btns  {
+    clear: both;
+     overflow:  hidden;
+}
+ 
+.action_btns a  {
+    display:  block;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+/****** LOGIN MODAL ******/
+.loginmodal-container {
+  padding: 30px;
+  max-width: 350px;
+  width: 100% !important;
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: roboto;
+}
+
+.loginmodal-container h1 {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: roboto;
+}
+
+.loginmodal-container input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.loginmodal-container input[type=text], input[type=password] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.loginmodal-container input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+
+.loginmodal {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+/* border-radius: 3px; */
+/* -webkit-user-select: none;
+  user-select: none; */
+}
+
+.loginmodal-submit {
+  /* border: 1px solid #3079ed; */
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  background-color: #4d90fe;
+  padding: 17px 0px;
+  font-family: roboto;
+  font-size: 14px;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.loginmodal-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #357ae8;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.loginmodal-container a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+} 
+
+.login-help{
+  font-size: 12px;
+}
+
+.modal {
+	position: fixed;
+	z-index: 999999;
+}
+.modal-dialog {
+	position: fixed;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+}
+
+/****** Teacher sign up ******/
+.signup-container {
+  padding: 30px;
+  max-width: 60%;
+  width: 100% !important;
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: roboto;
+}
+
+.signup-container h1 {
+  font-family: roboto;
+}
+
+.signup-container input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.signup-container input[type=text], input[type=password] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.signup-container input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.signup-container a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+} 
+
+.btn-round-lg{
+border-radius: 22.5pt;
+}
+.btn-round{
+border-radius: 17pt;
+}
+
+.btn-round-xs{
+border-radius: 11pt;
+padding-left: 10pt;
+padding-right: 10pt;
+}
+
+.btn-primary{color:#fff;background-color:#337ab7;border-color:#2e6da4}.btn-primary.focus,.btn-primary:focus{color:#fff;background-color:#286090;border-color:#122b40}.btn-primary:hover{color:#fff;background-color:#286090;border-color:#204d74}.btn-primary.active,.btn-primary:active  
+.btn-sm{padding:5px 10px;font-size:12px;line-height:1.5;border-radius:3px}
+.btn{display:inline-block;padding:6px 12px;margin-bottom:0;font-size:14px;font-weight:400;line-height:1.42857143;text-align:center;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-image:none;border:1px solid transparent;border-radius:4px}.btn.active.focus,.btn.active:focus,.btn.focus,.btn:active.focus,.btn:active:focus,.btn:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}.btn.focus,.btn:focus,.btn:hover{color:#333;text-decoration:none}.btn.active,.btn:active{background-image:none;outline:0;-webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,.125);box-shadow:inset 0 3px 5px rgba(0,0,0,.125)}.btn.disabled,.btn[disabled],fieldset[disabled] .btn{cursor:not-allowed;filter:alpha(opacity=65);-webkit-box-shadow:none;box-shadow:none;opacity:.65}a.btn.disabled,fieldset[disabled] a.btn{pointer-events:none}
+
+
+/* controls container */
+/****** Teacher sign up ******/
+.custom-container {
+  padding: 10px;
+  width: 100% !important;
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: roboto;
+}
+
+.custom-container h1 {
+  font-family: roboto;
+}
+
+.custom-container input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.custom-container input[type=text], input[type=password] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.custom-container input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.custom-container a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+} 
+
+
+/* button group */
+.button-group-ul{
+      display:block;
+      list-style:none;
+      overflow:hidden;
+      margin-left:5px;
+
+      font:13px/18px Helvetica Neue,Helvetica,Arial,sans-serif;
+   text-align:baseline;
+  
+  /* for demo purpose only */
+  width: 200px; margin: 50px auto;
+}
+.button-group-li{
+display:block;
+float:left;
+}
+.button-group-li a{
+  display:block;
+  font-weight:bold;
+  text-decoration:none;
+  color:#888;
+  text-shadow:0 1px #fff;
+  border:1px solid #d5d5d5;
+  border-bottom-color:#ddd;
+  background:#ddd;
+  background:-webkit-gradient(linear,left top,left bottom,color-stop(.25, #eee),color-stop(1, #ddd));
+  background: -webkit-linear-gradient(top,#eee 25%,#ddd 100%);
+  background: -moz-linear-gradient(top,#eee 25%,#ddd 100%);
+  background: -o-linear-gradient(top,#eee 25%,#ddd 100%);
+  background: linear-gradient(top,#eee 25%,#ddd 100%);
+  -webkit-box-shadow:inset 0 1px 2px rgba(255,255,255,0.1);
+     -moz-box-shadow:inset 0 1px 2px rgba(255,255,255,0.1);
+          box-shadow:inset 0 1px 2px rgba(255,255,255,0.1);
+}
+.button-group-li:first-child a{
+   padding:4px 12px 6px 16px;
+   border-right:0;
+   -webkit-border-radius:18px 0 0 18px;
+      -moz-border-radius:18px 0 0 18px;
+           border-radius:18px 0 0 18px;
+}
+.button-group-li:last-child a{
+   padding:4px 16px 6px 12px;
+   -webkit-border-radius:0 18px 18px 0;
+      -moz-border-radius:0 18px 18px 0;
+           border-radius:0 18px 18px 0;
+}
+.button-group-li a:hover{
+   background:#eee;
+   background:-webkit-gradient(linear,left top,left bottom,color-stop(.25, #fff),color-stop(1, #eee));
+   background: -webkit-linear-gradient(top,#fff 25%,#eee 100%);
+   background: -moz-linear-gradient(top,#fff 25%,#eee 100%);
+   background: -o-linear-gradient(top,#fff 25%,#eee 100%);
+   background: linear-gradient(top,#fff 25%,#eee 100%);
+}
+.button-group-li a:active{
+   text-shadow:0 -1px #fff;
+   background:#ccc;
+   background:-webkit-gradient(linear,left top,left bottom,color-stop(.25, #eee),color-stop(1, #fff));
+   background: -webkit-linear-gradient(top,#eee 25%,#fff 100%);
+   background: -moz-linear-gradient(top,#eee 25%,#fff 100%);
+   background: -o-linear-gradient(top,#eee 25%,#fff 100%);
+   background: linear-gradient(top,#eee 25%,#fff 100%);
+   -webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1);
+      -moz-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1);
+           box-shadow:inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
